@@ -68,16 +68,16 @@ img {
   flex-direction: row;
   align-items: center;
   height: 80px;
-
-  margin: 0, auto;
-  justify-content: space-between;
 }
 
-.navigation {
+.nav {
   display: flex;
-  margin: 0;
-  padding: 0;
-  margin-left: 93px;
+  align-items: center;
+  margin-right: 305px;
+}
+
+.nav-link {
+  margin-right: 93px;
 }
 
 .nav-item:not(:first-child) {
@@ -90,9 +90,9 @@ img {
   padding: 0;
 }
 
-.contacts-header-item {
-  width: 161px;
-  height: 16px;
+.contacts-header {
+  display: flex;
+  align-items: baseline;
 }
 
 .contacts-header-item:not(:first-child) {
@@ -103,6 +103,13 @@ img {
 .envelope {
   width: 16px;
   height: 12px;
+  fill: currentColor;
+  margin-right: 6px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
   fill: currentColor;
   margin-right: 6px;
 }
@@ -164,7 +171,7 @@ img {
   max-width: 1600px;
   background: var(--secondary-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(./images/images/Img\ BG\ header.jpg);
+    url(/images/images/Img\ BG\ header.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -180,6 +187,7 @@ img {
   color: var(--title-color);
   margin: auto;
   width: 696px;
+  text-transform: uppercase;
 }
 
 .hero-btn {
@@ -243,11 +251,9 @@ img {
   width: 270px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.specials-icon {
-  padding-top: 25px;
-  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------WORKS------------ */
@@ -381,7 +387,7 @@ img {
   justify-content: center;
   color: #afb1b8;
 }
-.customers-item + .customers-item {
+.customers-link + .customers-link {
   margin-left: 30px;
 }
 
@@ -406,10 +412,10 @@ img {
 
 .footer-contr {
   display: flex;
+  align-items: baseline;
 }
 .adress-contr {
   display: block;
-  width: 231px;
   margin-right: 70px;
 }
 
@@ -449,12 +455,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .follow {
   display: block;
-  width: 206px;
-  height: 80px;
+  align-items: baseline;
 }
 
 .follow-list {
@@ -506,7 +512,7 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--title-color) position absolute;
-  padding: 0.7em 1.5em;
+  padding: 6px 22px;
 
   background: var(--accent-bg-color);
   border-radius: 4px;
@@ -514,7 +520,7 @@ img {
 }
 .pf-btn:focus,
 .pf-btn:hover {
-  padding: 0.7em 1.5em;
+  padding: 6px 22px;
 
   font-style: normal;
   font-weight: 1.62;
@@ -603,9 +609,9 @@ img {
   margin-left: 30px;
 } */
 
-.suggestions-item:hover,
+.suggestions-text:hover,
 :focus {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
