@@ -164,7 +164,7 @@ img {
   max-width: 1600px;
   background: var(--secondary-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/images/Img\ BG\ header.jpg);
+    url(./images/images/Img\ BG\ header.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
