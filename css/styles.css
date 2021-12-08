@@ -104,14 +104,14 @@ img {
   width: 16px;
   height: 12px;
   fill: currentColor;
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
   fill: currentColor;
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 .contacts-header {
@@ -171,7 +171,7 @@ img {
   max-width: 1600px;
   background: var(--secondary-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/images/Img\ BG\ header.jpg);
+    url(../images/images/Img\ BG\ header.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -605,14 +605,12 @@ img {
   border: 1px solid #eeeeee;
 }
 
-/* .suggestions-item:not(:nth-child(3n + 1)) {
-  margin-left: 30px;
-} */
+.shadow-item {
+  display: block;
+}
 
-.suggestions-text:hover,
+.shadow-item:hover,
 :focus {
-  border-bottom: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -622,4 +620,7 @@ img {
   padding-top: 21px;
   padding-left: 24px;
   padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
